@@ -23,18 +23,6 @@ void footer() {
 	system("pause");
 }
 
-int CPoint::n = 0;
-
-void opcion1(){
-	CPoint a(3,4);
-	CPoint b[5];
-	CPoint *c = new CPoint;
-
-	cout << a.n << endl; // imprime 7
-	delete c;
-	cout << CPoint::n<<endl<<endl;
-}
-
 int main(){
 	char ch;
 
