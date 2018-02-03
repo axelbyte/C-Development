@@ -50,6 +50,20 @@ void header(int opt) {
 
 }
 
+
+void opcion1(){
+
+}
+void opcion2(){
+
+}
+void opcion3(){
+
+}
+
+void opcion4(){
+
+}
 int main(){
 	char ch;
 
@@ -60,18 +74,22 @@ int main(){
 		switch (ch){
 		case '1':
 			header(1);
+			opcion1();
 			footer();
 			break;
 		case '2':
 			header(2);
+			opcion2();
 			footer();
 			break;
 		case '3':
 			header(3);
+			opcion3();
 			footer();
 			break;
 		case '4':
 			header(4);
+			opcion4();
 			footer();
 			break;
 		case 's':
