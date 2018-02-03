@@ -6,7 +6,7 @@
  */
 
 #include <iostream>
-
+#include "CPoint.h"
 
 using namespace std;
 
@@ -47,7 +47,17 @@ void header(int opt) {
 		cout << "************"<<endl;
 		break;
 	}
+}
+int CPoint::n = 0;
 
+void opcion1(){
+	CPoint a(3,4);
+	CPoint b[5];
+	CPoint *c = new CPoint;
+
+	cout << a.n << endl; // imprime 7
+	delete c;
+	cout << CPoint::n<<endl<<endl;
 }
 
 int main(){
@@ -60,6 +70,7 @@ int main(){
 		switch (ch){
 		case '1':
 			header(1);
+			opcion1();
 			footer();
 			break;
 		case '2':
