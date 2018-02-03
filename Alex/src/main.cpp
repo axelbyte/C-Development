@@ -54,7 +54,6 @@ int CPoint::n = 0;
 void opcion1(){
 	CPoint a(3,4);
 	CPoint b[5];
-	asdfsdf;
 	CPoint *c = new CPoint;
 
 	cout << a.n << endl; // imprime 7
