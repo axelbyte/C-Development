@@ -48,6 +48,7 @@ void header(int opt) {
 		break;
 	}
 }
+
 int CPoint::n = 0;
 
 void opcion1(){
