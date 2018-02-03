@@ -6,7 +6,7 @@
  */
 
 #include <iostream>
-#include "CPoint.h"
+
 
 using namespace std;
 
@@ -23,6 +23,33 @@ void footer() {
 	system("pause");
 }
 
+void header(int opt) {
+	system ("CLS");
+	switch (opt){
+	case 1:
+		cout << "************"<<endl;
+		cout << "* Opcion 1 *"<< endl;
+		cout << "************"<<endl;
+		break;
+	case 2:
+		cout << "************"<<endl;
+		cout << "* Opcion 2 *"<< endl;
+		cout << "************"<<endl;
+		break;
+	case 3:
+		cout << "************"<<endl;
+		cout << "* Opcion 3 *"<< endl;
+		cout << "************"<<endl;
+		break;
+	case 4:
+		cout << "************"<<endl;
+		cout << "* Opcion 4 *"<< endl;
+		cout << "************"<<endl;
+		break;
+	}
+
+}
+
 int main(){
 	char ch;
 
@@ -32,20 +59,19 @@ int main(){
 		cin >> ch;
 		switch (ch){
 		case '1':
-			cout<<"Opcion 1"<<endl;
-			opcion1();
+			header(1);
 			footer();
 			break;
 		case '2':
-			cout<<"Opcion 2"<<endl;
+			header(2);
 			footer();
 			break;
 		case '3':
-			cout<<"Opcion 3"<<endl;
+			header(3);
 			footer();
 			break;
 		case '4':
-			cout<<"Opcion 4"<<endl;
+			header(4);
 			footer();
 			break;
 		case 's':
