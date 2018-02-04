@@ -6,7 +6,8 @@
  */
 
 #include <iostream>
-#include "CPoint.h"
+
+#include "Geometry.h"
 
 using namespace std;
 

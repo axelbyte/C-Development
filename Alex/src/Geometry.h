@@ -5,8 +5,8 @@
  *      Author: Pedro Juan Ibarra
  */
 
-#ifndef SRC_CPOINT_H_
-#define SRC_CPOINT_H_
+#ifndef SRC_GEOMETRY_H_
+#define SRC_GEOMETRY_H_
 
 
 /*
@@ -22,11 +22,27 @@ public:
 
 	CPoint();
 	CPoint(int u,int v);
-	void printPoint();
-	virtual ~CPoint();
+int CPoint::getX() const;
+int CPoint::getY() const;
+void CPoint::setX(const int new_x);
+void CPoint::setY(const int new_y);
+
+virtual ~CPoint();
+};
+
+class CPointArray{
+private:
+	int size;
+	CPoint *p;
+	void CPointArray::resize(int n);
+
+public:
+	CPointArray();
+	CPointArray(const CPoint points[],const int size);
+	CPointArray::CPointArray(const CPointArray& pv);
+	CPointArray::~CPointArray();
 };
 
 
 
-
-#endif /* SRC_CPOINT_H_ */
+#endif /* SRC_GEOMETRY_H_ */
