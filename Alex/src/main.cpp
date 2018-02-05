@@ -2,7 +2,7 @@
  * main.cpp
  *
  *  Created on: 3 feb. 2018
- *      Author: Pedro Juan Ibarra
+ *      Author: Alejandro Ibarra
  */
 
 #include <iostream>
