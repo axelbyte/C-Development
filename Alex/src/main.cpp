@@ -7,6 +7,10 @@
 
 #include <iostream>
 
+
+#include "Geometry.h"
+
+
 using namespace std;
 
 #ifdef _WIN32
@@ -72,7 +76,18 @@ void header(int opt) {
 		cout << "************"<<endl;
 		break;
 	}
+}
 
+int CPoint::n = 0; //Variable global donde se guardan el numero de puntos totales activos.
+
+void opcion1(){
+	CPoint a(3,4);
+	CPoint b[5];
+	CPoint *c = new CPoint;
+
+	cout << a.n << endl; // imprime 7
+	delete c;
+	cout << CPoint::n<<endl<<endl;
 }
 
 
