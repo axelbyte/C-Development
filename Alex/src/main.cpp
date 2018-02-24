@@ -2,7 +2,7 @@
  * main.cpp
  *
  *  Created on: 3 feb. 2018
- *      Author: Pedro Juan Ibarra
+ *      Author: Alejandro Ibarra
  */
 
 #include <iostream>
@@ -50,7 +50,7 @@ void header(int opt) {
 	}
 }
 
-int CPoint::n = 0;
+int CPoint::n = 0; //Variable global donde se guardan el numero de puntos totales activos.
 
 void opcion1(){
 	CPoint a(3,4);

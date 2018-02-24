@@ -2,7 +2,7 @@
  * CPoint.h
  *
  *  Created on: 3 feb. 2018
- *      Author: Pedro Juan Ibarra
+ *      Author: Alejandro Ibarra
  */
 
 #ifndef SRC_GEOMETRY_H_

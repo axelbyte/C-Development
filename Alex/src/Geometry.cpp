@@ -2,7 +2,7 @@
  * CPoint.cpp
  *
  *  Created on: 3 feb. 2018
- *      Author: Pedro Juan Ibarra
+ *      Author: Alejandro Ibarra
  */
 
 #include "Geometry.h"
@@ -10,7 +10,7 @@
 
 
 CPoint::CPoint(int u,int v) {
-	++n;
+	++n;//  al contruir un punto aumentamos el numero total en la variable global.
 	x=u;
 	y=v;
 
@@ -35,7 +35,7 @@ void CPoint::setY(const int new_y){
 }
 
 CPoint::~CPoint() {
-	--n;
+	--n; // al destruir un punto disminuimos el numero total en la variable global.
 }
 
 CPointArray::CPointArray(){
