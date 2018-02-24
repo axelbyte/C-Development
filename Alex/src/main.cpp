@@ -7,25 +7,53 @@
 
 #include <iostream>
 
+
 #include "Geometry.h"
+
 
 using namespace std;
 
+#ifdef _WIN32
+#include <windows.h>
+void clrscreen(){
+	system("CLS");
+}
+void pausa(){
+	system ("pause");
+}
+#else
+#include <unistd.h>
+void clrscreen(){
+	//system("CLS");
+}
+void pausa(){
+	// system ("pause");
+}
+#endif
+
 void menu() {
+	cout << "**********************"<< endl;
 	cout << "\t1) Opcion 1" << endl;
 	cout << "\t2) Opcion 2" << endl;
 	cout << "\t3) Opcion 3" << endl;
 	cout << "\t4) Opcion 4" << endl;
+	cout << "**********************"<< endl << endl;
 	cout << "Eliga una o pulse S para salir" << endl;
 }
 
 void footer() {
+
 	cout << "Pulse cualquier tecla para continuar." << endl;
-	system("pause");
+	// system("pause"); //Funciona en windows no en unix/linux
+	pausa();
+
 }
 
 void header(int opt) {
-	system ("CLS");
+
+	//system ("CLS"); //Funciona en windows no en unix/linux
+	clrscreen();
+
 	switch (opt){
 	case 1:
 		cout << "************"<<endl;
@@ -62,11 +90,26 @@ void opcion1(){
 	cout << CPoint::n<<endl<<endl;
 }
 
+
+void opcion1(){
+
+}
+void opcion2(){
+
+}
+void opcion3(){
+
+}
+
+void opcion4(){
+
+}
 int main(){
 	char ch;
 
 	do {
-		system("CLS");
+		 // system("CLS"); //Funciona en windows no en unix/linux
+		clrscreen();
 		menu();
 		cin >> ch;
 		switch (ch){
@@ -77,14 +120,17 @@ int main(){
 			break;
 		case '2':
 			header(2);
+			opcion2();
 			footer();
 			break;
 		case '3':
 			header(3);
+			opcion3();
 			footer();
 			break;
 		case '4':
 			header(4);
+			opcion4();
 			footer();
 			break;
 		case 's':
